@@ -18,3 +18,31 @@ This project analyzes tourist reviews from various places in Rajasthan using sen
 
 ```bash
 pip install -r requirements.txt
+```
+
+Usage
+Run the main analysis script:
+
+Edit
+```bash
+python run_analysis.py
+```
+
+This will:
+
+Load the review data from Kagglehub
+
+Filter for Rajasthan cities
+
+Sample reviews and perform sentiment analysis
+
+Print sample sentiment scores
+
+Notes
+
+You may need to authenticate Kagglehub with your Kaggle API credentials.
+
+The sentiment model used is nlptown/bert-base-multilingual-uncased-sentiment.
+You may need to authenticate Kagglehub with your Kaggle API credentials.
+
+The sentiment model used is nlptown/bert-base-multilingual-uncased-sentiment.
