@@ -1,0 +1,17 @@
+from transformers import pipeline
+
+def create_sentiment_analyzer():
+    return pipeline(
+        "sentiment-analysis",
+        model="nlptown/bert-base-multilingual-uncased-sentiment",
+        framework="pt"
+    )
+
+def sentiment_to_score(label):
+    # Converts labels like "5 stars" to integer 5
+    return int(label.split()[0])
+
+def analyze_sentiment(sentiment_analyzer, reviews):
+    results = sentiment_analyzer(reviews)
+    scores = [sentiment_to_score(r['label']) for r in results]
+    return scores
