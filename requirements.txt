@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+statsmodels
+prophet
+transformers
+kagglehub
+torch
+tokenizers==0.21.0
