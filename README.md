@@ -63,3 +63,15 @@ This approach supports proactive tourism planning beyond raw visitor counts.
    ```bash
    git clone https://github.com/yourusername/tourism-ml-forecast-sentiment-analysis.git
    cd tourism-ml-forecast-sentiment-analysis
+```
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run forecasting scripts/notebooks in forecasting/ for time series models.
+
+Run sentiment analysis in sentiment_analysis/.
+
+Check combined analysis notebooks for integration and visualization.
